@@ -1,6 +1,11 @@
 const canvas = document.getElementById("tutorial");
 const ctx = canvas.getContext("2d");
 
+function drawText(){
+  ctx.font = '48px serif';
+  ctx.strokeText('Hello world', 10, 50);
+}
+
 function drawFrame() {
   ctx.fillRect(25, 25, 100, 100);
   ctx.clearRect(45, 45, 60, 60);
